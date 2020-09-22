@@ -11,25 +11,25 @@ To help me build my models, I extracted the hour, day of the week, month, and ye
 I also had a few outliers as shown on the graph on the left below. I assume that demand did not actually dip below 15,000 megawatthours at these times and that there was an issue with supply. I decided to replace these points using the average demand for the same hour, day of week, and month. The graph on the right below shows the resulting series.
 
 <p align="center">
-<img src="energy/images/series_screenshot.png" width="800" height="275">
+<img src="energy/images/series_sreenshot.png" width="800" height="275">
 <p/>
 
 Next, I wanted to examine the elements making up this series. The graphs below show the series' trend, seasonal, and residual components. This series does not have much of a trend, but it does have a strong seasonal component.
 
 <p align="center">
-<img src="energy/images/series_decomposed.png" width="800" height="275">
+<img src="energy/images/decomposed.png" width="800" height="500">
 <p/>
 
 Lastly, I wanted to view the impact hour, day of week, month, and year had on the series. Below shows the mean, maximum and minimum for each year, month, day of week, and hour.
 
 <p align="center">
-<img src="energy/images/mean_max_min.png" width="800" height="275">
+<img src="energy/images/mean_max_min.png" width="800" height="500">
 <p/>
 
 Because hour and month have the most impact on the variation in the data, I wanted to see if hourly demand changed by month. Below is a graph showing the average demand by hour for four months- January, April, July, and October. We can see that month does affect hourly demand. For instance, peak energy use is much later in the day in April than it is for July.
 
 <p align="center">
-<img src="energy/images/demand_hour_month.png" width="800" height="275">
+<img src="energy/images/demand_hour_month.png" width="600" height="300">
 <p/>
 
 ## Modeling
