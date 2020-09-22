@@ -55,7 +55,7 @@ Test Results:
 - Add weather data as another feature.
 - Combining models to make predictions since different models seem to do better for different time periods.
 - Try more LSTM variations. Try adding another layer.
-- Make interaction dummies for month and hour
+- Make interaction dummies for month and hour.
 
 ## Tools Used
 
