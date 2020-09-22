@@ -4,7 +4,7 @@ Electricity use can vary dramatically throughout the day. Providers need to be a
 
 ## Exploring The Data
 
-The data in EIA's starts July 1, 2015 and is updated every day. Demand is given for every hour producing a time series with over 45,000 points of data. The data and instructions for connecting to EIA's API can be found [here].(https://www.eia.gov/opendata/qb.php?category=3389936&sdid=EBA.CAL-ALL.D.HL)
+The data in EIA's starts July 1, 2015 and is updated every day. Demand is given for every hour producing a time series with over 45,000 points of data. The data and instructions for connecting to EIA's API can be found [here](https://www.eia.gov/opendata/qb.php?category=3389936&sdid=EBA.CAL-ALL.D.HL).
 
 To help me build my models, I extracted the hour, day of the week, month, and year values from the timestamp. For certain models, like Linear Regression, Random Forest Regressor, and Gradient Boosting Regressor, I dummified these columns. For my Long Short-Term Memory (LSTM) model, I normalized the demand data.
 
