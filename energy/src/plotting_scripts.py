@@ -20,7 +20,7 @@ def plot_series(raw_data, data):
 
   for i,ax in enumerate(axs.flatten()):
       ax.plot(data_lst[i]['Timestamp'], data_lst[i]['Demand'])
-      ax.set_title(title_lst, fontsize=20)
+      ax.set_title(title_lst[i], fontsize=20)
       ax.set_xlabel('Time', fontsize=16)
 
       if i==0:
