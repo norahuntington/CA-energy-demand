@@ -40,14 +40,14 @@ For my Lasso and Ridge models, I wrote a function to search for the best alpha v
 
 Train Results:
 <p align="center">
-<img src="Images/train_results.png" width="800" height="275">
+<img src="energy/images/train_results.png" width="800" height="275">
 <p/>
 
 My models that did the best on average tended to do the worst when predicting the hardest week in July.
 
 Test Results:
 <p align="center">
-<img src="Images/test_results.png" width="800" height="275">
+<img src="energy/images/final_test.png" width="800" height="275">
 <p/>
 
 ## Next Steps
