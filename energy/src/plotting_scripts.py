@@ -15,19 +15,19 @@ def plot_series(raw_data, data):
   '''
   fig, axs = plt.subplots(1,2, figsize=(14, 5))
 
-  data_lst = [raw_data, data]
+  data_dict = {0:raw_data, 1:data}
   title_lst = ['Hourly Demand- Outliers Unaltered', 'Hourly Demand- Outliers Altered']
 
   for i,ax in enumerate(axs.flatten()):
-      ax.plot(data_lst[i]['Timestamp'], data_lst[i]['Demand'])
-      ax.set_title(title_lst[i], fontsize=20)
-      ax.set_xlabel('Time', fontsize=16)
+    ax.plot(data_dict[i]['Timestamp'], data_dict[i]['Demand'])
+    ax.set_title(title_lst[i], fontsize=20)
+    ax.set_xlabel('Time', fontsize=16)
 
-      if i==0:
-          ax.set_ylabel('Megawatthours', fontsize=16)
+    if i==0:
+      ax.set_ylabel('Megawatthours', fontsize=16)
 
   plt.tight_layout()
-  fig.savefig('images/series.png')
+  fig.savefig('energy/images/series.png')
 
 def plot_decomposed_series(data):
   '''
